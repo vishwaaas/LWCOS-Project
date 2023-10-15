@@ -1,0 +1,12 @@
+<template>
+    <components-navbar></components-navbar>
+    <div class="slds-p-around_large wrapper">
+        <lightning-card title="Expenses Details">
+            <components-datatable records={expenseRecords}
+            onedit={editHandler}
+            ondelete={deleteHandler}></components-datatable>
+        </lightning-card>
+    </div>
+   
+   
+</template>
