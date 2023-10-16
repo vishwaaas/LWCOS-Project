@@ -5,7 +5,7 @@ export default class Home extends LightningElement{
 
     async connectedCallback(){
       const expenses = await this.getExpenses()
-      console.log("expenses", expenses)
+      console.log("expenses", expenses);
       this.expenseRecords = expenses.totalSize > 0 ? expenses.records :[]
     }
 
