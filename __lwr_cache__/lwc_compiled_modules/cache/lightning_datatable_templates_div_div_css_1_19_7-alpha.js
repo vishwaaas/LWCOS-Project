@@ -1,0 +1,8 @@
+function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  var suffixToken = token ? ("-" + token) : "";
+  return ".cell" + shadowSelector + " {display: inline-block;padding: .25rem .5rem;white-space: nowrap;}.column-header" + shadowSelector + " {color: #514f4d;padding: .25rem .5rem;font-weight: 700;line-height: normal;}.table-header" + shadowSelector + " {height: 0;}[data-row-key-value]" + shadowSelector + " {border-top: 1px solid #dddbda;}.slds-table_header-fixed" + shadowSelector + " [data-row-key-value]:first-child" + shadowSelector + " {border-top: 0;}[role=\"row\"]" + shadowSelector + " {counter-increment: row-number;}[role=\"grid\"]" + shadowSelector + " > [role=\"rowgroup\"]:nth-child(1)" + shadowSelector + " {margin-left: -0.5rem;}[role=\"columnheader\"]" + shadowSelector + " {outline: none;}[role=\"row\"]:hover" + shadowSelector + " {background-color: var(--sds-c-color-background, #f3f2f2);}[role=\"row\"].slds-is-selected" + shadowSelector + " {background-color: var(--sds-c-color-background-dark, #ecebea);}[role=\"rowheader\"].slds-has-focus" + shadowSelector + ",[role=\"rowheader\"]:focus" + shadowSelector + " {box-shadow: var(--sds-c-color-border-selection, #0176d3) 0 0 0 1px inset;box-shadow: var(--sds-c-color-border-selection, #0176d3) 0 0 0 1px inset;outline: 0;}";
+  /*LWC compiler v3.0.0*/
+}
+export default [stylesheet];
